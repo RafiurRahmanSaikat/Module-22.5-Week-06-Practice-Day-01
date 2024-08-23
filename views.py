@@ -1,3 +1,4 @@
+
 class TransferMoneyView(TransactionCreateMixin):
     form_class = TransferMoneyForm
     template_name = "transactions/transfermoney.html"
@@ -66,3 +67,4 @@ class WithdrawView(TransactionCreateMixin):
         messages.success(self.request, f"{amount} Tk successfully withdrawn")
 
         return super().form_valid(form)
+
